@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Baseball Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baseball Browser Game</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="game-container">
+    <h1>⚾ Baseball Game</h1>
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+    <div id="ui">
+      <button id="swingBtn">Swing</button>
+      <p id="status">Press Swing to hit the ball!</p>
+      <p id="score">Score: 0</p>
+    </div>
+  </div>
 
-<h1>⚾ Home Run Derby</h1>
-
-<div id="game">
-  <div id="ball"></div>
-</div>
-
-<button onclick="swing()">Swing</button>
-<p id="result"></p>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
